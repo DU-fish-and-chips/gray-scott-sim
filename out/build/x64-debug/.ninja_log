@@ -1,11 +1,11 @@
 # ninja log v6
 20	3912	7532335343804945	CMakeFiles/pro_homework1.dir/gs.cpp.obj	9dfabf4cbc740f5b
 33	1322	7532334910241287	googletest-build/googletest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.obj	38d39d0f549fdc0a
-25	3739	7532337986382611	CMakeFiles/pro_homework1_lib.dir/gs.cpp.obj	7ce62507a2b4eb74
+26	3826	7532338609327074	CMakeFiles/pro_homework1_lib.dir/gs.cpp.obj	46f29bcd9318e19b
 82	1506	7532334910732350	googletest-build/googlemock/CMakeFiles/gmock_main.dir/src/gmock_main.cc.obj	beae7e857a0624af
 74	2213	7532334910652615	googletest-build/googlemock/CMakeFiles/gmock_main.dir/src/gmock-all.cc.obj	a25ca5c4e94961bc
 57	2179	7532334910477967	googletest-build/googlemock/CMakeFiles/gmock.dir/src/gmock-all.cc.obj	fa10110f23574e73
-41	2526	7532334910328343	CMakeFiles/test_pro_homework1.dir/test.cpp.obj	6717d6e696a49386
+34	1535	7532338609406860	CMakeFiles/test_pro_homework1.dir/test.cpp.obj	508d8a6b0ec1358
 49	3152	7532334910398178	googletest-build/googlemock/CMakeFiles/gmock.dir/__/googletest/src/gtest-all.cc.obj	7aaa7058eb3ac9fa
 65	3175	7532334910557756	googletest-build/googlemock/CMakeFiles/gmock_main.dir/__/googletest/src/gtest-all.cc.obj	77e014565c2df148
 24	3290	7532334910150310	googletest-build/googletest/CMakeFiles/gtest.dir/src/gtest-all.cc.obj	48c7f29fc54f5d16
@@ -13,8 +13,5 @@
 37	649	7532335113353365	lib/gmock.lib	4160daca1d083efb
 314	650	7532335116120992	lib/gtest_main.lib	e8183f26c26d8141
 43	656	7532335113413209	lib/gmock_main.lib	b4f9bb3839d2aee5
-3739	3805	7532338023516217	pro_homework1_lib.lib	631e2d361cef360
-34	1535	7532338609406860	CMakeFiles/test_pro_homework1.dir/test.cpp.obj	508d8a6b0ec1358
-26	3826	7532338609327074	CMakeFiles/pro_homework1_lib.dir/gs.cpp.obj	46f29bcd9318e19b
 3827	3888	7532338647332921	pro_homework1_lib.lib	631e2d361cef360
 3889	4974	7532338647957281	test_pro_homework1.exe	3de354cd41e4505b
