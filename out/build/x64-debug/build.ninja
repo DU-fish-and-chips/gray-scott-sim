@@ -85,7 +85,7 @@ build pro_homework1_lib.lib: CXX_STATIC_LIBRARY_LINKER__pro_homework1_lib_Debug 
 build cmake_object_order_depends_target_test_pro_homework1: phony || cmake_object_order_depends_target_gtest cmake_object_order_depends_target_gtest_main cmake_object_order_depends_target_pro_homework1_lib
 
 build CMakeFiles\test_pro_homework1.dir\test.cpp.obj: CXX_COMPILER__test_pro_homework1_unscanned_Debug D$:\pythonProject\homework_durham\pro_homework1\test.cpp || cmake_object_order_depends_target_test_pro_homework1
-  FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Ob0 /Od /RTC1 /MTd -std:c++20 -ZI
+  FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Ob0 /Od /RTC1 /MTd -std:c++14 -ZI
   INCLUDES = -external:ID:\pythonProject\homework_durham\pro_homework1\googletest-main\googletest\include -external:ID:\pythonProject\homework_durham\pro_homework1\googletest-main\googletest -external:W0
   OBJECT_DIR = CMakeFiles\test_pro_homework1.dir
   OBJECT_FILE_DIR = CMakeFiles\test_pro_homework1.dir

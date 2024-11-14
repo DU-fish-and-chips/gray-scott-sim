@@ -52,7 +52,7 @@
 			"compileCommandFragments" : 
 			[
 				{
-					"fragment" : "/DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Ob0 /Od /RTC1 /MTd -std:c++20 -ZI"
+					"fragment" : "/DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Ob0 /Od /RTC1 /MTd -std:c++14 -ZI"
 				}
 			],
 			"includes" : 
@@ -75,7 +75,7 @@
 				[
 					2
 				],
-				"standard" : "20"
+				"standard" : "14"
 			},
 			"sourceIndexes" : 
 			[

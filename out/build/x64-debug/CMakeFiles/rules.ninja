@@ -65,35 +65,6 @@ rule CXX_STATIC_LIBRARY_LINKER__pro_homework1_lib_Debug
 
 
 #############################################
-# Rule for generating CXX dependencies.
-
-rule CXX_SCAN__test_pro_homework1_Debug
-  deps = msvc
-  command = E:\VS\2022\Preview\VC\Tools\MSVC\14.42.34432\bin\Hostx64\x64\cl.exe $DEFINES $INCLUDES $FLAGS $in -nologo -TP -showIncludes -scanDependencies $DYNDEP_INTERMEDIATE_FILE -Fo$OBJ_FILE
-  description = Scanning $in for CXX dependencies
-
-
-#############################################
-# Rule to generate ninja dyndep files for CXX.
-
-rule CXX_DYNDEP__test_pro_homework1_Debug
-  command = E:\VS\2022\Preview\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe -E cmake_ninja_dyndep --tdi=CMakeFiles\test_pro_homework1.dir\CXXDependInfo.json --lang=CXX --modmapfmt=msvc --dd=$out @$out.rsp
-  description = Generating CXX dyndep file $out
-  rspfile = $out.rsp
-  rspfile_content = $in
-  restat = 1
-
-
-#############################################
-# Rule for compiling CXX files.
-
-rule CXX_COMPILER__test_pro_homework1_scanned_Debug
-  deps = msvc
-  command = ${LAUNCHER}${CODE_CHECK}E:\VS\2022\Preview\VC\Tools\MSVC\14.42.34432\bin\Hostx64\x64\cl.exe  /nologo /TP $DEFINES $INCLUDES $FLAGS /showIncludes @$DYNDEP_MODULE_MAP_FILE /Fo$out /Fd$TARGET_COMPILE_PDB /FS -c $in
-  description = Building CXX object $out
-
-
-#############################################
 # Rule for compiling CXX files.
 
 rule CXX_COMPILER__test_pro_homework1_unscanned_Debug
