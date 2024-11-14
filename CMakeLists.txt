@@ -17,12 +17,15 @@ project("pro_homework1")
 #add_library(pro_homework1_lib "gs.cpp" "pro_homework1.h" "gs.h")
 add_library(test_shiyunwang_lib "gs.cpp" "pro_homework1.h" "gs.h")
 add_library(Shanshan_Huang_Test_lib "gs.cpp" "pro_homework1.h" "gs.h")
+add_library(Hu_Wang_test_lib "gs.cpp" "pro_homework1.h" "gs.h")
+
 ###################
 
 ###################
 if (CMAKE_VERSION VERSION_GREATER 3.12)
   set_property(TARGET test_shiyunwang_lib PROPERTY CXX_STANDARD 14)
   set_property(TARGET Shanshan_Huang_Test_lib PROPERTY CXX_STANDARD 14)
+  set_property(TARGET Hu_Wang_test PROPERTY CXX_STANDARD 14)
 endif()
 ###################
 
@@ -40,6 +43,9 @@ target_link_libraries(test_shiyunwang test_shiyunwang_lib gtest gtest_main)
 
 add_executable(Shanshan_Huang_Test "Shanshan_Huang_Test.cpp")
 target_link_libraries(Shanshan_Huang_Test Shanshan_Huang_Test_lib gtest gtest_main)
+
+add_executable(Hu_Wang_test "Hu_Wang_test.cpp")
+target_link_libraries(Hu_Wang_test Hu_Wang_test_lib gtest gtest_main)
 ########################
 
 ###################
@@ -47,6 +53,7 @@ target_link_libraries(Shanshan_Huang_Test Shanshan_Huang_Test_lib gtest gtest_ma
 if (CMAKE_VERSION VERSION_GREATER 3.12)
   set_property(TARGET test_shiyunwang PROPERTY CXX_STANDARD 14)
   set_property(TARGET Shanshan_Huang_Test PROPERTY CXX_STANDARD 14)
+  set_property(TARGET Hu_Wang_test PROPERTY CXX_STANDARD 14)
 endif()
 ###################
 
@@ -56,6 +63,7 @@ enable_testing()
 #add_test(NAME test_pro_homework1 COMMAND test_pro_homework1)
 add_test(NAME test_shiyunwang COMMAND test_shiyunwang)
 add_test(NAME Shanshan_Huang_Test COMMAND Shanshan_Huang_Test)
+add_test(NAME Hu_Wang_test COMMAND Hu_Wang_test)
 ########################
 # set the MTd to be the same, otherwise there will be conflicts
 set(CMAKE_CXX_FLAGS_DEBUG "${CMAKE_CXX_FLAGS_DEBUG} /MTd")
