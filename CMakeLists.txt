@@ -11,12 +11,19 @@ endif()
 
 project("pro_homework1")
 
-# add source code
-add_library(pro_homework1_lib "gs.cpp" "pro_homework1.h" "gs.h")
 
+###################
+# add source code
+#add_library(pro_homework1_lib "gs.cpp" "pro_homework1.h" "gs.h")
+
+add_library(test_shiyunwang_lib "gs.cpp" "pro_homework1.h" "gs.h")
+###################
+
+###################
 if (CMAKE_VERSION VERSION_GREATER 3.12)
-  set_property(TARGET pro_homework1_lib PROPERTY CXX_STANDARD 20)
+  set_property(TARGET test_shiyunwang_lib PROPERTY CXX_STANDARD 14)
 endif()
+###################
 
 # import google test 
 add_subdirectory("googletest-main" googletest-build)
@@ -32,11 +39,12 @@ target_link_libraries(test_shiyunwang test_shiyunwang_lib gtest gtest_main)
 
 ########################
 
+###################
 # setting the standard of C++
 if (CMAKE_VERSION VERSION_GREATER 3.12)
   set_property(TARGET test_shiyunwang PROPERTY CXX_STANDARD 14)
 endif()
-
+###################
 
 enable_testing()
 ########################
