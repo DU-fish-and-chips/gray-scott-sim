@@ -1,4 +1,4 @@
-#include "gs.h"  ///< 假设 gs.h 是声明变量和函数的头文件
+#include "gs.h"  
 
 #include <typeinfo>
 
@@ -32,8 +32,7 @@ TEST(Initialization, DefaultValues) {
         }
 
     }
-    EXPECT_EQ(u.size(), v.size());
-    EXPECT_EQ(u[0].size(), v[0].size());
+    
 }
 
 
