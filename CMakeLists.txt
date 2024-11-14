@@ -34,7 +34,7 @@ target_link_libraries(test_shiyunwang test_shiyunwang_lib gtest gtest_main)
 
 # setting the standard of C++
 if (CMAKE_VERSION VERSION_GREATER 3.12)
-  set_property(TARGET test_pro_homework1 PROPERTY CXX_STANDARD 14)
+  set_property(TARGET test_shiyunwang PROPERTY CXX_STANDARD 14)
 endif()
 
 
