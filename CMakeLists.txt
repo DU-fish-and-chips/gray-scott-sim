@@ -25,7 +25,7 @@ add_library(Hu_Wang_test_lib "gs.cpp" "pro_homework1.h" "gs.h")
 if (CMAKE_VERSION VERSION_GREATER 3.12)
   set_property(TARGET test_shiyunwang_lib PROPERTY CXX_STANDARD 14)
   set_property(TARGET Shanshan_Huang_Test_lib PROPERTY CXX_STANDARD 14)
-  set_property(TARGET Hu_Wang_test PROPERTY CXX_STANDARD 14)
+  set_property(TARGET Hu_Wang_test_lib PROPERTY CXX_STANDARD 14)
 endif()
 ###################
 
